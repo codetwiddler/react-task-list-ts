@@ -1,5 +1,7 @@
 # MDN's "Getting started with React" App
 
+The original app as described in the below doc(s) has been re-factored into TypeScript in this repo.
+
 [Information here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
