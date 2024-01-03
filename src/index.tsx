@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './resets.css';
 import App from './App';
 
 //In React 18, ReactDOM.render method is still available,
