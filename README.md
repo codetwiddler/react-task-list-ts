@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# MDN's "Getting started with React" App
+
+[Information here](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,7 +10,11 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.\
+or just use the same ol'
+
+### `npm start`
+
+This will runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
