@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { usePrevious } from "../modules"
 
-//Making Props a type for each component explicitly defines the kind of data the
-//component is designed to work with
-type Props = {
+//Making Props a type for each component explicitly defines the
+//kind of data the component is designed to work with
+type TaskItemProps = {
   description: string;
   complete: boolean;
   id: string;
@@ -15,7 +15,7 @@ type Props = {
 //We no longer want to use React.FC<Props>. React 18 removes { children: ReactNode | ReactNode[] }
 //as an inherent input because components should accept any type of children. Thus, it is important
 //to be explicit about the input types we're using from now on.
-const TaskItem = ({ description, complete, id, toggleTaskComplete, deleteTask, editTask }: Props ) => {
+const TaskItem = ({ description, complete, id, toggleTaskComplete, deleteTask, editTask }: TaskItemProps ) => {
   const editFieldRef = useRef<HTMLInputElement>(null);
   const editButtonRef = useRef<HTMLButtonElement>(null);
   const [isEditing, setEditing] = useState(false);

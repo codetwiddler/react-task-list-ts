@@ -4,8 +4,8 @@
     margin-top: 0.4rem;
   }
   .btn {
-    padding: 0.8rem 1rem 0.7rem;
-    border: 0.2rem solid #4d4d4d;
+    padding: 0.5rem 1rem 0.75rem;
+    border: 0.25rem solid #4d4d4d;
     cursor: pointer;
     text-transform: capitalize;
   }
@@ -14,7 +14,8 @@
     border-color: #d3d3d3;
   }
   .btn.toggle-btn[aria-pressed="true"] {
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: underline solid 2px;
     border-color: #4d4d4d;
   }
   .btn__danger {

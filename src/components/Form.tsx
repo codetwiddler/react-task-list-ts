@@ -1,25 +1,24 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 
-// Define the types for your props here
-type Props = {
+type FormProps = {
   addTask: (description: string) => void;
 };
 
-const Form = ({ addTask }: Props) => {
+const Form = ({ addTask }: FormProps) => {
   const [description, setDescription] = useState<string>("");
 
-  // You can type the event parameter as FormEvent for form submission events
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
+  //We'll Type the event parameter as FormEvent for form submission events
+  function handleSubmit(event: FormEvent) {
+    event.preventDefault();
     if (description) {
       addTask(description);
       setDescription("");
     }
   }
 
-  // You can type the event parameter as ChangeEvent for input change events
-  function handleChange(e: ChangeEvent<HTMLInputElement>) {
-    setDescription(e.target.value);
+  //We'll Type the event parameter as ChangeEvent for input change events
+  function handleChange(event: ChangeEvent<HTMLInputElement>) {
+    setDescription(event.target.value);
   }
 
   return (
