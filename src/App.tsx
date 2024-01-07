@@ -30,7 +30,8 @@ const filters: Record<FilterKey, (task: Task) => boolean> = {
 const filterNames = Object.keys(filters) as FilterKey[]
 
 //Expressing everything as const is a convention designed to make things safer and/or more predictable
-//because then the functions are immutable (although the values they hold probably won't be)
+//because the functions are immutable (although the values they hold probably won't be). Also prevents
+//anything weird happening from hoisting. Also no more 'this' complications.
 const App = () => {
   const [tasks, setTasks] = useState<Task[]>(taskFakes);
   const [filter, setFilter] = useState<FilterKey>('All');
